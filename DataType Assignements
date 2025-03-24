@@ -1,1 +1,257 @@
 
+//--------------------------------Data Type Assigenments-------------------------------------------
+
+
+class C2W_CharDemo{
+
+        public static void main(String[] args){
+
+                char ch;
+                ch=65;
+
+                System.out.println("ch"+ch); //ChA
+                System.out.println("ch"+ch+1); // ChA1
+        }
+}
+
+class C2W_ShortDemo{
+
+
+        public static void main(String[] args){
+
+
+                short sh1=19;
+                short sh2=11;
+
+                int sh3= sh1+sh2;
+
+                System.out.println(sh3); //30
+        }
+}
+
+
+class C2W_ShortDemo2{
+
+        public static void main(String args[]){
+
+                short sh1='A';
+                short sh2='1';
+
+                System.out.println(sh1); // 65
+                System.out.println(sh2); // 49
+        }
+}
+
+class Core2Web{
+
+        public static void main(String[] args){
+
+                int ch = 65;
+                char ch1= ch;
+
+                System.out.println(ch);
+                System.out.println(ch1);
+
+                // ERROR : incompatible types: possible lossy conversion from int to char ---   char ch1= ch;
+                //
+                // Reason: we cant store integer value into character
+        }
+}
+
+class CharDemo2{
+
+        public static void main(String args[]){
+
+                char ch1= 65;
+                System.out.println(ch1);
+
+                char ch2=97;
+                System.out.println(ch2);
+
+                // ERROR : incompatible types: possible lossy conversion from int to char ---   char ch1= ch;
+                //
+                // Reason: we cant store integer value into character
+        }
+}
+
+class Demo{
+
+        public static void main(String[] args){
+
+                char ch1= true;
+                char ch2= false;
+
+                System.out.println(ch1);
+                System.out.println(ch2);
+
+                //  error: incompatible types: boolean cannot be converted to char
+                           //char ch1= true;  char ch2=false;
+                //
+                // Reason: we cant store boolean value into character
+        }
+}
+
+
+class BooleanDemo{
+
+
+
+        public static void main(String[] args){
+
+                byte b=128;
+                System.out.println(b);
+
+
+                 //error: incompatible types: byte cannot be converted to integer
+
+        }
+}
+
+class BooleanDemo1{
+
+        public static void main(String[] args){
+
+                boolean valueFirst="1";
+                char valueSecond="0";
+                System.out.println(valueFirst);
+                System.out.println(valueSecond);
+
+                // error: incompatible types: int cannot be converted to boolean
+        }
+}
+
+class CharDemo2{
+
+        public static void main(String[] args){
+
+                char valueFirst="1";
+                char valueSecond="0";
+
+                System.out.println(valueFirst);
+                System.out.println(valueSecond);
+
+                // error: incompatible types: String cannot be converted to char
+        }
+}
+
+class CharDemo3{
+
+        public static void main(string[] args){
+
+                char valueFirst='1';
+                char valueSecond='2';
+
+                System.out.println(valueFirst);
+                System.out.println(valueSecond);
+
+                // error: incompatible types: String cannot be converted to charater
+        }
+}
+
+class CharIntDemo{
+
+        public static void main(String[] args){
+
+                int numInt=10;
+                float numFloat=numInt;
+
+                System.out.println(numFloat);// 10.0
+        }
+}
+
+class IntegerDemo{
+
+
+        public static void main(String[] args){
+
+                int numInt='a';
+                float numFloat =numInt;
+
+                system.out.println(numFloat);
+
+                numFloat=20.005;
+                System.out.println(numFloat);  //incompatible types: possible lossy conversion from double to float
+
+        }
+}
+
+class FloatDemo{
+
+        public static void main(string[] args){
+
+                int num1='Z';
+                float num2=num1;
+                // float num2= num1;    //error: Duplicate local variable.
+
+                System.out.println(num2); // 90.0
+        }
+}
+
+class FloatDemo1{
+
+        public static void main(String[] args){
+
+                double num1=90.89D;
+                System.out.println(num1);
+
+                float num2=num1;  // incompatible types: possible lossy conversion from double to float
+                System.out.println(num2);
+        }
+}
+
+
+
+class FloatDemo2{
+
+        public static void main(String[] args){
+
+                int num1=959697;
+                float num2=959697.12345f;
+                double num3=num2;
+
+                System.out.println(num1); //959697
+                System.out.println(num2); //959697.1
+                System.out.println(num3); // 969697.125
+        }
+}
+
+class FloatDemo3{
+
+        public static void main(String[] args){
+
+                char ch='A';
+                int num1=ch;
+                float num2= num1;
+                double num3=num2;
+
+                System.out.println(ch);
+                System.out.println(num1); // 65
+                System.out.println(num2); // 65.0
+                System.out.println(num3); // 65.0
+        }
+}
+
+
+class LongDemo{
+
+        public static void main(String[] args){
+
+                long num1=123456789011223;
+                System.out.println(num1); // error: Integer number to large  out of its range
+        }
+}
+
+
+
+class LongDemo1{
+
+        public static void main(String[] args){
+
+                long num1;
+                int num2= 2000005;
+                num1=num2;
+                System.out.println(num1); // 2000005
+
+        }
+}
+~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ~                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ~                                                            
